@@ -1,4 +1,4 @@
-package task2;
+package task2_3updated;
 
 public class Main {
 

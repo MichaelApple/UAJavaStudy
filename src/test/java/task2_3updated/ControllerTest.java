@@ -1,7 +1,6 @@
-package task2;
+package task2_3updated;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Scanner;

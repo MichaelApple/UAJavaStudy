@@ -21,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/task2/ControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/task2_3updated/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,17 +33,17 @@
         </entry>
       </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task2/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            <state relative-caret-position="147">
+              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task2/View.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/View.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -53,7 +53,7 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task2/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
@@ -63,10 +63,10 @@
         </entry>
       </file>
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task2/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Model.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/main/java/task2/Model.java" />
         <option value="$PROJECT_DIR$/src/test/java/task2/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/task2/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task2_3updated/Controller.java" />
       </list>
     </option>
   </component>
@@ -238,7 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task2" />
+              <option name="myItemId" value="task2_3updated" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,11 +278,11 @@
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="task2.*" />
+          <option name="PATTERN" value="task2_3updated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="task2.Main" />
+      <option name="MAIN_CLASS_NAME" value="task2_3updated.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -323,15 +324,15 @@
     <configuration default="false" name="ControllerTest.setRandomNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="task2.*" />
+          <option name="PATTERN" value="task2_3updated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="UAStudy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="task2" />
-      <option name="MAIN_CLASS_NAME" value="task2.ControllerTest" />
+      <option name="PACKAGE_NAME" value="task2_3updated" />
+      <option name="MAIN_CLASS_NAME" value="task2_3updated.ControllerTest" />
       <option name="METHOD_NAME" value="setRandomNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -349,15 +350,15 @@
     <configuration default="false" name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="task2.*" />
+          <option name="PATTERN" value="task2_3updated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="UAStudy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="task2" />
-      <option name="MAIN_CLASS_NAME" value="task2.ControllerTest" />
+      <option name="PACKAGE_NAME" value="task2_3updated" />
+      <option name="MAIN_CLASS_NAME" value="task2_3updated.ControllerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -375,15 +376,15 @@
     <configuration default="false" name="ControllerTest.testRanges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="task2.*" />
+          <option name="PATTERN" value="task2_3updated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="UAStudy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="task2" />
-      <option name="MAIN_CLASS_NAME" value="task2.ControllerTest" />
+      <option name="PACKAGE_NAME" value="task2_3updated" />
+      <option name="MAIN_CLASS_NAME" value="task2_3updated.ControllerTest" />
       <option name="METHOD_NAME" value="testRanges" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -798,7 +799,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500876648463</updated>
-      <workItem from="1500876655713" duration="20527000" />
+      <workItem from="1500876655713" duration="20999000" />
     </task>
     <servers />
   </component>
@@ -835,11 +836,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20527000" />
+    <option name="totallyTimeSpent" value="20999000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="1" width="1378" height="734" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="1" width="1378" height="734" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -856,7 +857,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20485584" sideWeight="0.49391305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20485584" sideWeight="0.49391305" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298639" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -933,7 +934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task2/View.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
@@ -941,7 +942,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task2/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
@@ -949,28 +950,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task2/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/task2/ControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/task2_3updated/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task2/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task2_3updated/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="147">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
         </state>
       </provider>

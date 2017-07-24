@@ -1,4 +1,4 @@
-package task2;
+package task2_3updated;
 
 /**
  * Created by Miha on 24.07.2017.
