@@ -33,24 +33,17 @@ public class Controller {
     // The Work method
     public void startGame(){
         Scanner sc = new Scanner(System.in);
-
         int winNumber = setRandomNumber(min, max);
-
-        System.out.println(winNumber);
-
         view.printMessage(View.INPUT_INT_DATA);
-
         checkInt(sc);
 
         while ((guess = sc.nextInt()) != winNumber) {
 
             checkWrongNumber(sc);
-
             if (guess == winNumber) break;
-
-            if (guess > winNumber) {
+            if (guess > winNumber)
                 max = guess;
-            } else min = guess;
+            else min = guess;
 
             view.printMessage(View.WRONG_NUMBER);
             view.printMessage(View.RANGE_OF_NUMBERS + min + " " + max);
