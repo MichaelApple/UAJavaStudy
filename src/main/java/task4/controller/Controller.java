@@ -60,6 +60,7 @@ public class Controller {
             result = sc.nextLine();
             if (result.matches(regex)) {
                 getClass().getDeclaredField(input).set(this, result);
+                System.out.println(getClass().getSimpleName());
                 return;
             } else view.printWrongInput();
         }
