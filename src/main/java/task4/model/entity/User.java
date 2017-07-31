@@ -1,5 +1,7 @@
 package task4.model.entity;
 
+import task4.model.exceptions.LoginAlreadyExist;
+
 import java.time.LocalDateTime;
 
 /**
@@ -24,12 +26,15 @@ public class User {
     private LocalDateTime dateOfCreation;
     private LocalDateTime lastChangesDate;
 
-    public User(String firstName, String lastName, String middleName, String nickName, String comment, Group group, String homePhone, String cellPhonel, String cellPhone2, String email, String skype, Adress adress) {
+    public User(String firstName, String lastName, String middleName, String nickName, String comment, Group group, String homePhone, String cellPhonel, String cellPhone2, String email, String skype, Adress adress) throws LoginAlreadyExist {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
         this.initials = lastName + firstName.charAt(0) + ".";
-        this.nickName = nickName;
+
+        if (nickName.equals("Michael")) throw new LoginAlreadyExist();
+        else this.nickName = nickName;
+
         this.comment = comment;
         this.group = group;
         this.homePhone = homePhone;

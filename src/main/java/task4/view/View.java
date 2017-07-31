@@ -16,4 +16,8 @@ public class View {
     public void inputData(String input, String regex) {
         System.out.println("Please enter " + input + " (" + regex + "): ");
     }
+
+    public void printUserAlreadyExist(String nickname) {
+        printMessage(nickname + " already exists. Try another one.");
+    }
 }

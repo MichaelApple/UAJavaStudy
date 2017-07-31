@@ -3,6 +3,7 @@ package task4.controller;
 import task4.model.Model;
 import task4.model.entity.Adress;
 import task4.model.entity.Group;
+import task4.model.exceptions.LoginAlreadyExist;
 import task4.view.View;
 
 import java.util.Map;
@@ -40,14 +41,16 @@ public class Controller {
         this.view = view;
     }
 
-
     public void processUser() throws NoSuchFieldException, IllegalAccessException {
         Scanner sc = new Scanner(System.in);
         for (Map.Entry<String, String> entry : REG_EXPRSSION_MAP.entrySet()) {
             checkData(sc, entry.getKey(), entry.getValue());
         }
-
-        model.addUser(firstName, lastName, middleName, nickName, comment, group, homePhone, cellPhonel, cellPhone2, email, skype, zip, city, street, buildingNumber, flat);
+        try {
+            model.addUser(firstName, lastName, middleName, nickName, comment, group, homePhone, cellPhonel, cellPhone2, email, skype, zip, city, street, buildingNumber, flat);
+        } catch (LoginAlreadyExist loginAlreadyExist) {
+            view.printMessage(nickName);
+        }
         view.printMessage(model.getUser().toString());
     }
 
@@ -60,7 +63,6 @@ public class Controller {
             result = sc.nextLine();
             if (result.matches(regex)) {
                 getClass().getDeclaredField(input).set(this, result);
-                System.out.println(getClass().getSimpleName());
                 return;
             } else view.printWrongInput();
         }
