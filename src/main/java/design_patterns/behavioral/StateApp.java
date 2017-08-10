@@ -77,11 +77,9 @@ class RadioWestPolus implements Station {
 
 class Radio {
     Station station;
-
     public void setStation(Station station) {
         this.station = station;
     }
-
     void nextStation() {
         if (station instanceof Radio24) {
             setStation(new RadioWestPolus());
