@@ -12,7 +12,7 @@ public class Tourist {
         vacation.addOption(new Transfer());
         vacation.addOption(new FlyTickets());
         vacation.addOption(new HotelBooking());
-        
+
         vacation.info();
     }
 }
