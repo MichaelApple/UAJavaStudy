@@ -4,7 +4,7 @@ package reflection;
  * Created by Miha on 16.08.2017.
  */
 @MyClassAnnotation(name = "Rectangle")
-public class Rectangle extends Point {
+public class Rectangle extends Point implements Shape{
 
     private int width;
     private int height;

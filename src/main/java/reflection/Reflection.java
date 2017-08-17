@@ -1,10 +1,7 @@
 package reflection;
 
 import java.lang.annotation.Annotation;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -39,6 +36,17 @@ public class Reflection {
 
         List<Annotation> classAnnotations = new ArrayList<>(Arrays.asList(klass.getDeclaredAnnotations()));
         classAnnotations.forEach(annotation -> System.out.println(annotation.toString()));
+
+        Shape proxy = (Shape) Proxy.newProxyInstance(Rectangle.class.getClassLoader(), Rectangle.class.getInterfaces(), new ProxyObject(rectangle));
+
+        proxy.move(20, 30);
+
+        try {
+            proxy.setHeight(20);
+        } catch (Exception e) {
+            System.err.println("Exception because of setter method !!");
+        }
+
 
     }
 }
