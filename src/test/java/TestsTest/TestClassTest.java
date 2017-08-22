@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.Timeout;
 
+import java.util.Optional;
+
 import static org.junit.Assert.*;
 
 /**
@@ -34,9 +36,10 @@ public class TestClassTest {
 
     @Test(expected = ArithmeticException.class)
     public void div() throws Exception {
-        assertEquals(0, testClass.div(4,0));
+        Optional<Integer> optional = Optional.empty();
+        Optional<Integer> actualResult = Optional.ofNullable(testClass.div(5, 0));
+        assertEquals(optional, actualResult);
     }
-
     @Ignore
     @Test
     public void multiply() throws Exception {
