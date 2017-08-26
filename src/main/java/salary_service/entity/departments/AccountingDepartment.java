@@ -1,4 +1,4 @@
-package salary_service.model;
+package salary_service.entity.departments;
 
 
 import salary_service.entity.*;
@@ -12,9 +12,8 @@ import java.util.List;
 /**
  * Created by Miha on 22.08.2017.
  */
-public class AccountingDepartment {
+public class AccountingDepartment extends Department {
 
-    private List<Employee> employees = new ArrayList<>();
     private long fund;
 
     public void setFund() {
@@ -26,9 +25,6 @@ public class AccountingDepartment {
         return fund;
     }
     public List<Employee> getEmployees() {
-        return employees;
-    }
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
+        return super.employees;
     }
 }

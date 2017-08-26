@@ -49,4 +49,5 @@ public abstract class Employee {
     }
 
     public abstract long getRage();
+
 }

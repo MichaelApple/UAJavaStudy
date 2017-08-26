@@ -8,7 +8,7 @@ import java.time.LocalDate;
  */
 public class Worker extends Employee {
 
-    public static final long rage = 100;
+    private final long rage = 100;
 
     public Worker(String name, LocalDate hireDay, LocalDate birthday) {
         super(name, hireDay, birthday);
@@ -17,5 +17,12 @@ public class Worker extends Employee {
     @Override
     public long getRage() {
         return rage;
+    }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "rage=" + rage +
+                '}';
     }
 }

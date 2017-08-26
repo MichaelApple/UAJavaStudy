@@ -7,13 +7,30 @@ import java.time.LocalDate;
  */
 public class Stuff extends Employee {
 
-    public static final long rage = 200;
+    private final long rage = 200;
+    private String description;
 
-    public Stuff(String name, LocalDate hireDay, LocalDate birthday) {
+    public Stuff(String name, LocalDate hireDay, LocalDate birthday, String description) {
         super(name, hireDay, birthday);
+        this.description = description;
     }
     @Override
     public long getRage() {
         return rage;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Stuff{" +
+                "rage=" + rage +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
