@@ -27,16 +27,17 @@ public class Main {
         accountingDepartment.add(new Manager("Solo", LocalDate.of(2017, Month.AUGUST, 20), LocalDate.of(1991, Month.MARCH, 18), new ArrayList<>()));
         accountingDepartment.add(new Stuff("Sofia", LocalDate.of(2013, Month.APRIL, 7), LocalDate.of(2000, Month.AUGUST, 26), "Some Description"));
 
-        worker = accountingDepartment.changeType(worker, EmployeeType.MANAGER);
-        accountingDepartment.add(worker);
-
         Manager manager = new Manager("Solo", LocalDate.of(2017, Month.AUGUST, 20), LocalDate.of(1991, Month.MARCH, 18), new ArrayList<>());
 
-        accountingDepartment.addToManager(worker, manager);
-        System.out.println("!!");
-        System.out.println(manager.getSubordinates().toString());
-
-        accountingDepartment.getEmployees().forEach(System.out::println);
+//        accountingDepartment.addToManager(worker, manager);
+//        System.out.println("!!");
+//        manager.getSubordinates().forEach(System.out::println);
+//        System.out.println();
+//
+//        worker = accountingDepartment.changeType(worker, EmployeeType.MANAGER);
+//        accountingDepartment.add(worker);
+//
+//        accountingDepartment.getEmployees().forEach(System.out::println);
 
         accountingDepartment.setFund();
         System.out.println("Fund " + accountingDepartment.getFund());

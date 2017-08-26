@@ -27,6 +27,9 @@ public class Department implements EmployeeManagement {
 
     @Override
     public Employee changeType(Employee employee, EmployeeType newType) {
+//        if (employee.getClass().equals(Manager.class)) {
+//
+//        }
         switch (newType) {
             case MANAGER:
                 return new Manager(employee.getName(), employee.getHireDay(), employee.getBirthday(), new ArrayList<>());

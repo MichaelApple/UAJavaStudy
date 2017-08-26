@@ -30,7 +30,7 @@ public class Manager extends Employee {
     public String toString() {
         return "Manager{" +
                 "rage=" + rage +
-                ", subordinates=" + subordinates +
+                ", subordinates=" + subordinates.size() +
                 '}';
     }
 }

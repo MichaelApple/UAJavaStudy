@@ -8,7 +8,7 @@ public interface SalaryStuff {
     long MANAGER_WAGE = 500L;
     long STUFF_WAGE = 300L;
 
-    long MANAGER_PREMIUM = 200L;
+    long MANAGER_PREMIUM_PER_WORKER = 5L;
 
     long BIRTHDAY_PREMIUM = 100L;
 }
