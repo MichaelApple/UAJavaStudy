@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="task_site@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="task_site">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="Andrew"/>
+    <schema id="4" parent="1" name="Bakery"/>
+    <schema id="5" parent="1" name="BD"/>
+    <schema id="6" parent="1" name="BD1"/>
+    <schema id="7" parent="1" name="Busy"/>
+    <schema id="8" parent="1" name="Commerce"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="MyDataBase"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="new_db"/>
+    <schema id="13" parent="1" name="Patients4Life"/>
+    <schema id="14" parent="1" name="performance_schema"/>
+    <schema id="15" parent="1" name="reg"/>
+    <schema id="16" parent="1" name="tutorial"/>
+    <schema id="17" parent="1" name="yii2basic"/>
+    <table id="18" parent="2" name="banners"/>
+    <table id="19" parent="2" name="m2m_banners_pages"/>
+    <table id="20" parent="2" name="news"/>
+    <table id="21" parent="2" name="news_categories"/>
+    <table id="22" parent="2" name="pages"/>
+    <table id="23" parent="2" name="reviews"/>
+    <table id="24" parent="2" name="reviews_categories"/>
+    <column id="25" parent="18" name="b_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="18" name="b_url">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="18" name="b_show">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="28" parent="18" name="b_click">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="29" parent="18" name="b_text">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="18" name="b_pic">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="31" parent="18" name="PRIMARY">
+      <ColNames>b_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="19" name="b_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="19" name="p_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="34" parent="19" name="p_id">
+      <ColNames>p_id</ColNames>
+    </index>
+    <key id="35" parent="19" name="PRIMARY">
+      <ColNames>b_id
+p_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="36" parent="19" name="m2m_banners_pages_ibfk_1">
+      <ColNames>b_id</ColNames>
+      <RefSchemaName>task_site</RefSchemaName>
+      <RefTableName>banners</RefTableName>
+      <RefColNames>b_id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <foreign-key id="37" parent="19" name="m2m_banners_pages_ibfk_2">
+      <ColNames>p_id</ColNames>
+      <RefSchemaName>task_site</RefSchemaName>
+      <RefTableName>pages</RefTableName>
+      <RefColNames>p_id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="38" parent="20" name="n_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="20" name="n_category">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="20" name="n_header">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="20" name="n_text">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="20" name="n_dt">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="20" name="n_category">
+      <ColNames>n_category</ColNames>
+    </index>
+    <key id="44" parent="20" name="PRIMARY">
+      <ColNames>n_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="45" parent="20" name="news_ibfk_1">
+      <ColNames>n_category</ColNames>
+      <RefSchemaName>task_site</RefSchemaName>
+      <RefTableName>news_categories</RefTableName>
+      <RefColNames>nc_id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="46" parent="21" name="nc_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="21" name="nc_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="48" parent="21" name="PRIMARY">
+      <ColNames>nc_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="22" name="p_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="22" name="p_parent">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="22" name="p_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="52" parent="22" name="p_parent">
+      <ColNames>p_parent</ColNames>
+    </index>
+    <key id="53" parent="22" name="PRIMARY">
+      <ColNames>p_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="54" parent="22" name="pages_ibfk_1">
+      <ColNames>p_parent</ColNames>
+      <RefSchemaName>task_site</RefSchemaName>
+      <RefTableName>pages</RefTableName>
+      <RefColNames>p_id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="55" parent="23" name="r_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="56" parent="23" name="r_category">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="23" name="r_header">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="23" name="r_text">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="23" name="r_dt">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="23" name="r_category">
+      <ColNames>r_category</ColNames>
+    </index>
+    <key id="61" parent="23" name="PRIMARY">
+      <ColNames>r_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="62" parent="23" name="reviews_ibfk_1">
+      <ColNames>r_category</ColNames>
+      <RefSchemaName>task_site</RefSchemaName>
+      <RefTableName>reviews_categories</RefTableName>
+      <RefColNames>rc_id</RefColNames>
+      <OnUpdate>update</OnUpdate>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="63" parent="24" name="rc_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="64" parent="24" name="rc_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="65" parent="24" name="PRIMARY">
+      <ColNames>rc_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

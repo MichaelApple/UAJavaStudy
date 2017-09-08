@@ -165,3 +165,55 @@ WHERE r_dt = (SELECT max(r_dt) FROM reviews);
 
 
 -- 24 task
+SELECT b_id, b_url, b_text FROM banners
+WHERE ifnull(b_text, '') != '' AND b_url LIKE concat('%', banners.b_text, '%');
+# WHERE 0 < locate(b_text, b_url) AND b_text != "";
+
+
+-- 25 task
+SELECT pages.p_name FROM pages
+  INNER JOIN m2m_banners_pages ON pages.p_id = m2m_banners_pages.p_id
+  INNER JOIN banners ON m2m_banners_pages.b_id = banners.b_id
+WHERE b_click / banners.b_show = (SELECT max(b_click / banners.b_show) FROM banners);
+
+
+-- 26 task
+SELECT avg(b_click / b_show) FROM banners
+WHERE b_show >= 1;
+
+
+-- 27 task
+SELECT avg(b_click / b_show) FROM banners
+WHERE b_pic IS NULL;
+
+
+-- 28 task
+SELECT count(banners.b_id) as count FROM pages
+  INNER JOIN m2m_banners_pages ON pages.p_id = m2m_banners_pages.p_id
+  INNER JOIN banners ON m2m_banners_pages.b_id = banners.b_id
+WHERE p_parent IS NULL;
+
+
+-- 29 task
+SELECT banners.b_id, b_url, count(*) FROM banners
+  INNER JOIN m2m_banners_pages ON banners.b_id = m2m_banners_pages.b_id
+  INNER JOIN pages ON m2m_banners_pages.p_id = pages.p_id
+WHERE banners.b_id = m2m_banners_pages.b_id
+GROUP BY m2m_banners_pages.b_id
+ORDER BY count(*) DESC
+LIMIT 1;
+
+
+-- 30 task
+SELECT p_name, count(*) as cnt FROM pages
+  INNER JOIN m2m_banners_pages ON pages.p_id = m2m_banners_pages.p_id
+  INNER JOIN banners ON m2m_banners_pages.b_id = banners.b_id
+GROUP BY pages.p_id HAVING cnt = (
+  SELECT count(*) as cnt FROM pages
+    INNER JOIN m2m_banners_pages ON pages.p_id = m2m_banners_pages.p_id
+    INNER JOIN banners ON m2m_banners_pages.b_id = banners.b_id
+  GROUP BY pages.p_id
+  ORDER BY cnt DESC
+  LIMIT 1
+);
+
