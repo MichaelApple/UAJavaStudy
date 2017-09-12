@@ -8,6 +8,6 @@ public class Biologists implements Student {
 
     @Override
     public String toString() {
-        return "Biologist" ;
+        return "Biologist \n" ;
     }
 }

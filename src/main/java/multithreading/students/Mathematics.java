@@ -7,6 +7,6 @@ public class Mathematics implements Student{
 
     @Override
     public String toString() {
-        return "Mathematics" ;
+        return "Mathematics \n";
     }
 }

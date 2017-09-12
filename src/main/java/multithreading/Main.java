@@ -42,50 +42,44 @@ public class Main {
         //students.forEach(System.out::println);
 
         Runnable bioUniversity = () -> {
-
-            synchronized (students) {
-                for (Student student : students) {
-                    if (student instanceof Biologists) {
-                        students.poll();
-                        firstUniversity.add(student);
-                    } else break;
-                }
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            for (Student student : students) {
+                if (student instanceof Biologists) {
+                    students.poll();
+                    firstUniversity.add(student);
+                } else break;
+            }
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         };
 
         Runnable randomUniversity = () -> {
-            synchronized (students) {
-                int i = ThreadLocalRandom.current().nextInt(1, 5);
-                for (int j = 0; j < i; j++) {
-                    secondUniversity.add(students.poll());
-
-                }
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            int i = ThreadLocalRandom.current().nextInt(1, 5);
+            for (int j = 0; j < i; j++) {
+                secondUniversity.add(students.poll());
+            }
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         };
 
         Runnable mathUniversity = () -> {
-            synchronized (students) {
-                for (Student student : students) {
+            for (Student student : students) {
+                synchronized (students) {
                     if (student instanceof Mathematics) {
                         students.poll();
                         thirdUniversity.add(student);
                     } else break;
                 }
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            }
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         };
 
