@@ -38,10 +38,15 @@ public class Test {
 
     }
 
+   /**
+   * 1 Task
+    */
     public void printString(String string) {
         System.out.println("Hello, " + string + "!");
     }
-
+    /**
+     * 2 Task
+     */
     public int sum(int ... list) {
         int result = 0;
         for (int number : list) {
@@ -49,7 +54,9 @@ public class Test {
         }
         return result;
     }
-
+    /**
+     * 2 Task
+     */
     public int multiply(int ... list) {
         int result = 1;
         for (int number : list) {
@@ -58,16 +65,24 @@ public class Test {
         return result;
     }
 
+    /**
+     * 3 Task
+     */
     public String reverse(String string) {
         return new StringBuilder(string).reverse().toString();
     }
 
-
+    /**
+     * 4 Task
+     */
     public boolean is_palindrome(String string) {
         String reverse = reverse(string);
         return string.equals(reverse);
     }
 
+    /**
+     * 5 Task
+     */
     public void histogram(int ... list) {
         for (int item : list) {
             for (int j = 0; j < item; j++) {
@@ -77,6 +92,9 @@ public class Test {
         }
     }
 
+    /**
+     * 6 Task
+     */
     public String caesar_cipher(String plainText, int shiftKey) {
         plainText = plainText.toLowerCase();
 
@@ -91,7 +109,9 @@ public class Test {
         return cipherText;
     }
 
-
+    /**
+     * 7 Task
+     */
     public int[][] diaginal_reverse(int[][] matrix) {
 
         int rows = matrix.length;
@@ -119,7 +139,9 @@ public class Test {
         return reverse;
     }
 
-
+    /**
+     * 9 Task
+     */
     public boolean isBracketBalanced(String str) {
 
         boolean isBalanced = false;
@@ -145,6 +167,9 @@ public class Test {
         return stack.empty();
     }
 
+    /**
+     * 10 Task
+     */
     public HashMap<Character,Integer> char_freq(String string) {
 
         HashMap<Character,Integer> map = new HashMap<>();
@@ -161,6 +186,9 @@ public class Test {
         return map;
     }
 
+    /**
+     * 11 Task
+     */
     public void dec_to_bin(int number) {
         int binary[] = new int[25];
         int index = 0;

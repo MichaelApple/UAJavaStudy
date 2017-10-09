@@ -53,31 +53,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/coretasks/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="167" column="39" lean-forward="false" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="39" />
+            <state relative-caret-position="412">
+              <caret line="112" column="8" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
               <folding>
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1095#1096#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
+                <element signature="method#main#0;class#Test#0" expanded="false" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
                 <element signature="method#is_palindrome#0;class#Test#0" expanded="false" />
                 <element signature="method#histogram#0;class#Test#0" expanded="false" />
                 <element signature="method#diaginal_reverse#0;class#Test#0" expanded="false" />
                 <element signature="method#isBracketBalanced#0;class#Test#0" expanded="false" />
                 <element signature="method#char_freq#0;class#Test#0" expanded="false" />
+                <element signature="method#dec_to_bin#0;class#Test#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/coretasks/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="34" column="89" lean-forward="false" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+            <state relative-caret-position="136">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +166,8 @@
         <option value="$PROJECT_DIR$/src/main/java/multithreading/students/Biologists.java" />
         <option value="$PROJECT_DIR$/src/main/java/multithreading/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/moreless/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/coretasks/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/coretasks/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/coretasks/Game.java" />
       </list>
     </option>
   </component>
@@ -951,7 +953,7 @@
       <workItem from="1505231162314" duration="2102000" />
       <workItem from="1505384405607" duration="32000" />
       <workItem from="1506409536959" duration="2697000" />
-      <workItem from="1507551225163" duration="4354000" />
+      <workItem from="1507551225163" duration="4590000" />
     </task>
     <servers />
   </component>
@@ -988,7 +990,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198962000" />
+    <option name="totallyTimeSpent" value="199198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1449,30 +1451,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/coretasks/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="34" column="89" lean-forward="false" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coretasks/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="167" column="39" lean-forward="false" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="39" />
+        <state relative-caret-position="412">
+          <caret line="112" column="8" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
           <folding>
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="method#main#0;class#Test#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
             <element signature="method#is_palindrome#0;class#Test#0" expanded="false" />
             <element signature="method#histogram#0;class#Test#0" expanded="false" />
             <element signature="method#diaginal_reverse#0;class#Test#0" expanded="false" />
             <element signature="method#isBracketBalanced#0;class#Test#0" expanded="false" />
             <element signature="method#char_freq#0;class#Test#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coretasks/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

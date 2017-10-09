@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * Created by Miha on 09.10.2017.
+ * 8 Task
  */
 public class Game {
 
