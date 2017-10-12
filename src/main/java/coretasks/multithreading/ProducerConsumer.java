@@ -12,20 +12,12 @@ import java.util.Random;
  */
 public class ProducerConsumer {
 
-    static Queue<String> queue = new LinkedList();
+    static final Queue<String> queue = new LinkedList();
     static int MAX_SIZE = 1;
 
     public static void main(String[] args) {
 
-        Producer producer = new Producer();
-        Consumer consumer = new Consumer();
-        producer.start();
-        consumer.start();
-    }
-
-    static class Producer extends Thread {
-
-        public void run() {
+        Thread t1 = new Thread(() -> {
             while (true) {
                 synchronized (queue) {
                     while (queue.size() == MAX_SIZE) {
@@ -41,6 +33,7 @@ public class ProducerConsumer {
                     String line = null;
                     try {
                         line = br.readLine();
+                        if (line.equals("!quit")) System.exit(0);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -49,11 +42,9 @@ public class ProducerConsumer {
                     queue.notifyAll();
                 }
             }
-        }
-    }
+        });
 
-    static class Consumer extends Thread {
-        public void run() {
+        Thread t2 = new Thread(() -> {
             while (true) {
                 synchronized (queue) {
                     while (queue.size() == 0) {
@@ -64,13 +55,14 @@ public class ProducerConsumer {
                             e.printStackTrace();
                         }
                     }
-
                     String element = queue.poll();
                     showLength(element);
                     queue.notifyAll();
                 }
             }
-        }
+        });
+        t1.start();
+        t2.start();
     }
 
     public static void showLength(String str) {
